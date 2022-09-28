@@ -1,0 +1,43 @@
+.appPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+
+}
+
+.pageImg {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.appImg {
+    height: 65px;
+    width: 65px;
+    float: left;
+}
+
+.appName{
+    margin-left: 50px;
+    margin-top: 30px;
+
+    float: left;
+    
+}
+.appShared{
+    margin-left: 50px;
+    float: left;
+    
+}
+.description{
+    max-width:83ch;
+    word-wrap:break-word;
+    margin-bottom: 10px;
+}
+
+.convert {
+    color: #0059ff;
+    text-decoration: none;
+}
