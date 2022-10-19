@@ -4,10 +4,13 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
+        <img src="https://raw.githubusercontent.com/blazap/blazap-db/main/color.png" />
         Blazap
       </Link>
       <ul>
-        <a href={process.env.REACT_APP_DOWNLOADS_REDIRECT}>Downloads</a>
+        <Link to="/share" className="site-title">
+          <a class="share">Share App</a>
+        </Link>
       </ul>
     </nav>
   )
