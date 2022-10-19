@@ -8,8 +8,8 @@ export default function Navbar() {
         Blazap
       </Link>
       <ul>
-        <Link to="/share" className="site-title">
-          <a class="share">Send App</a>
+        <Link to="/send" className="site-title">
+          <a class="send">Send App</a>
         </Link>
       </ul>
     </nav>
