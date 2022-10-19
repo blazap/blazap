@@ -9,7 +9,7 @@ export default function Navbar() {
       </Link>
       <ul>
         <Link to="/share" className="site-title">
-          <a class="share">Share App</a>
+          <a class="share">Send App</a>
         </Link>
       </ul>
     </nav>

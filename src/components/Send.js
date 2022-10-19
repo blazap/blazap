@@ -43,7 +43,7 @@ const Main = () => {
         <div>
             <Header />
             <div>
-                <h2>Share App</h2>
+                <h2>Send App</h2>
                 <a class="sendapp">How to send an application? <br /><br />
                     <a class="formurl" href="https://github.com/blazap/blazap-db/issues/new?assignees=octocat&labels=send+app&template=SEND-APP.yml&title=%5BSend+App%5D%3A+">Click here to go to the form</a>
                 </a>

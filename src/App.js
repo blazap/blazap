@@ -8,7 +8,7 @@ import {
 
 import Main from './components/Main'
 import AppPage from './components/AppPage'
-import Share from './components/Share'
+import Send from './components/Send'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={< Main />}></Route>
           <Route path="/app/:id" element={<AppPage />} />
-          <Route path="/share" element={<Share />} />
+          <Route path="/send" element={<Send />} />
         </Routes>
       </div>
     </Router>
