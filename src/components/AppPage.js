@@ -50,13 +50,10 @@ const Main = () => {
         if (!isFavourited) {
             storagedArray.current.push(data)
             setStorageItem(JSON.stringify(storagedArray.current))
-            console.log("yes")
         } else {
             const indexFavouritedId = storagedArray.current.indexOf(data)
             storagedArray.current.splice(indexFavouritedId, 1)
             setStorageItem(JSON.stringify(storagedArray.current))
-            console.log("no")
-
         }
     }
     return (
@@ -78,9 +75,9 @@ const Main = () => {
                         <a class="description"><h3>Description:</h3> {data.description}</a>
                         <button class="formbtn" onClick={() => window.location.href = data.webUrl}>Visit {data.lower}</button>
                         {isFavourited ? (
-                            <button onClick={addFav}>Remove from Favorites</button>
+                            <button onClick={addFav}>Remove from Favourites</button>
                         ) : (
-                            <button onClick={addFav}>Add Favorites</button>
+                            <button onClick={addFav}>Add Favourites</button>
                         )}
                         <a class="convert" href={process.env.REACT_APP_DOWNLOADS_REDIRECT}>or convert it to a normal app</a>
                     </div>
