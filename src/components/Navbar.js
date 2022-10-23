@@ -8,6 +8,9 @@ export default function Navbar() {
         Blazap
       </Link>
       <ul>
+        <Link to="/favorites" className="site-title">
+          <a class="send">Favorites</a>
+        </Link>
         <Link to="/send" className="site-title">
           <a class="send">Send App</a>
         </Link>
@@ -16,15 +19,3 @@ export default function Navbar() {
   )
 }
 
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  )
-}

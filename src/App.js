@@ -9,6 +9,7 @@ import {
 import Main from './components/Main'
 import AppPage from './components/AppPage'
 import Send from './components/Send'
+import Favorites from './components/Favorites'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/' element={< Main />}></Route>
           <Route path="/app/:id" element={<AppPage />} />
           <Route path="/send" element={<Send />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </div>
     </Router>
