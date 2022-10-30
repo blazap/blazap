@@ -1,1 +1,0 @@
-# blazap-web
